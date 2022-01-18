@@ -1,1 +1,18 @@
-{"errorCode":404,"message":"Not Found","details":["path: /modelRepository/models/28085c1d-8c24-4251-9068-0dc455db2f57/contents/4279ce5d-fbfe-428f-9ce6-0430634134d2/contents"],"links":[],"version":2,"httpStatusCode":404}
+[
+  {
+    "role": "score",
+    "name": "ds2_score.sas"
+  },
+  {
+    "role": "inputVariables",
+    "name": "inputVar.json"
+  },
+  {
+    "role": "outputVariables",
+    "name": "outputVar.json"
+  },
+  {
+    "role": "train",
+    "name": "batch.sas"
+  }
+]
