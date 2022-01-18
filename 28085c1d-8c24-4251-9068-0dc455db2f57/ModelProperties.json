@@ -1,1 +1,26 @@
-{"errorCode":404,"message":"Not Found","details":["path: /modelRepository/models/28085c1d-8c24-4251-9068-0dc455db2f57/contents/1a3cb082-bd85-4cb6-a0fd-ff57c8a8bc3f/contents"],"links":[],"version":2,"httpStatusCode":404}
+{
+  "custom properties": [],
+  "externalUrl": "",
+  "predictionVariable": "",
+  "modelVersionName": "1.1",
+  "trainTable": "",
+  "trainCodeType": "",
+  "description": "",
+  "tool": "",
+  "toolVersion": "",
+  "targetVariable": "BAD",
+  "scoreCodeType": "ds2EmbeddedProcess",
+  "externalModelId": "",
+  "createdBy": "brmdev",
+  "function": "classification",
+  "eventProbVar": "",
+  "modeler": "mdlmgradmin",
+  "name": "DS2EP_Reg1",
+  "modifiedTimeStamp": "2021-09-08T05:38:24 UTC",
+  "modifiedBy": "brmdev",
+  "id": "c08dd4a2-9671-44ef-8160-88810b0b1f5c",
+  "creationTimeStamp": "2021-09-07T08:00:09 UTC",
+  "targetEvent": "",
+  "targetLevel": "",
+  "algorithm": "logisticreg"
+}
