@@ -1,1 +1,267 @@
-{"errorCode":404,"message":"Not Found","details":["path: /modelRepository/models/28085c1d-8c24-4251-9068-0dc455db2f57/contents/9f3783bd-805f-4a8b-9c8f-a12731038d50/contents"],"links":[],"version":2,"httpStatusCode":404}
+<?xml version="1.0" encoding="utf-8" ?>
+<TABLE>
+   <INPUT>
+      <COLUMN name="NAME" value="CLAGE" />
+      <COLUMN name="ROLE" value="INPUT" />
+      <COLUMN name="LEVEL" value="INTERVAL" />
+      <COLUMN name="ORDER" missing=" " />
+      <COLUMN name="CREATOR" missing=" " />
+      <COLUMN name="FORMATTYPE" missing=" " />
+      <COLUMN name="FAMILY" missing=" " />
+      <COLUMN name="LOWERLIMIT" missing="." />
+      <COLUMN name="UPPERLIMIT" missing="." />
+      <COLUMN name="REPORT" value="N" />
+      <COLUMN name="DISTRIBUTION" missing=" " />
+      <COLUMN name="COMMENT" missing=" " />
+      <COLUMN name="PRICE" missing="." />
+      <COLUMN name="TYPE" value="N" />
+      <COLUMN name="LABEL" missing=" " />
+      <COLUMN name="FORMAT" missing=" " />
+      <COLUMN name="INFORMAT" missing=" " />
+      <COLUMN name="INDEX" value="N" />
+      <COLUMN name="INDEXTYPE" value="NONE" />
+      <COLUMN name="LENGTH" value="8" />
+   </INPUT>
+   <INPUT>
+      <COLUMN name="NAME" value="CLNO" />
+      <COLUMN name="ROLE" value="INPUT" />
+      <COLUMN name="LEVEL" value="INTERVAL" />
+      <COLUMN name="ORDER" missing=" " />
+      <COLUMN name="CREATOR" missing=" " />
+      <COLUMN name="FORMATTYPE" missing=" " />
+      <COLUMN name="FAMILY" missing=" " />
+      <COLUMN name="LOWERLIMIT" missing="." />
+      <COLUMN name="UPPERLIMIT" missing="." />
+      <COLUMN name="REPORT" value="N" />
+      <COLUMN name="DISTRIBUTION" missing=" " />
+      <COLUMN name="COMMENT" missing=" " />
+      <COLUMN name="PRICE" missing="." />
+      <COLUMN name="TYPE" value="N" />
+      <COLUMN name="LABEL" missing=" " />
+      <COLUMN name="FORMAT" missing=" " />
+      <COLUMN name="INFORMAT" missing=" " />
+      <COLUMN name="INDEX" value="N" />
+      <COLUMN name="INDEXTYPE" value="NONE" />
+      <COLUMN name="LENGTH" value="8" />
+   </INPUT>
+   <INPUT>
+      <COLUMN name="NAME" value="DEBTINC" />
+      <COLUMN name="ROLE" value="INPUT" />
+      <COLUMN name="LEVEL" value="INTERVAL" />
+      <COLUMN name="ORDER" missing=" " />
+      <COLUMN name="CREATOR" missing=" " />
+      <COLUMN name="FORMATTYPE" missing=" " />
+      <COLUMN name="FAMILY" missing=" " />
+      <COLUMN name="LOWERLIMIT" missing="." />
+      <COLUMN name="UPPERLIMIT" missing="." />
+      <COLUMN name="REPORT" value="Y" />
+      <COLUMN name="DISTRIBUTION" missing=" " />
+      <COLUMN name="COMMENT" missing=" " />
+      <COLUMN name="PRICE" missing="." />
+      <COLUMN name="TYPE" value="N" />
+      <COLUMN name="LABEL" missing=" " />
+      <COLUMN name="FORMAT" missing=" " />
+      <COLUMN name="INFORMAT" missing=" " />
+      <COLUMN name="INDEX" value="N" />
+      <COLUMN name="INDEXTYPE" value="NONE" />
+      <COLUMN name="LENGTH" value="8" />
+   </INPUT>
+   <INPUT>
+      <COLUMN name="NAME" value="DELINQ" />
+      <COLUMN name="ROLE" value="INPUT" />
+      <COLUMN name="LEVEL" value="INTERVAL" />
+      <COLUMN name="ORDER" missing=" " />
+      <COLUMN name="CREATOR" missing=" " />
+      <COLUMN name="FORMATTYPE" missing=" " />
+      <COLUMN name="FAMILY" missing=" " />
+      <COLUMN name="LOWERLIMIT" missing="." />
+      <COLUMN name="UPPERLIMIT" missing="." />
+      <COLUMN name="REPORT" value="N" />
+      <COLUMN name="DISTRIBUTION" missing=" " />
+      <COLUMN name="COMMENT" missing=" " />
+      <COLUMN name="PRICE" missing="." />
+      <COLUMN name="TYPE" value="N" />
+      <COLUMN name="LABEL" missing=" " />
+      <COLUMN name="FORMAT" missing=" " />
+      <COLUMN name="INFORMAT" missing=" " />
+      <COLUMN name="INDEX" value="N" />
+      <COLUMN name="INDEXTYPE" value="NONE" />
+      <COLUMN name="LENGTH" value="8" />
+   </INPUT>
+   <INPUT>
+      <COLUMN name="NAME" value="DEROG" />
+      <COLUMN name="ROLE" value="INPUT" />
+      <COLUMN name="LEVEL" value="INTERVAL" />
+      <COLUMN name="ORDER" missing=" " />
+      <COLUMN name="CREATOR" missing=" " />
+      <COLUMN name="FORMATTYPE" missing=" " />
+      <COLUMN name="FAMILY" missing=" " />
+      <COLUMN name="LOWERLIMIT" missing="." />
+      <COLUMN name="UPPERLIMIT" missing="." />
+      <COLUMN name="REPORT" value="N" />
+      <COLUMN name="DISTRIBUTION" missing=" " />
+      <COLUMN name="COMMENT" missing=" " />
+      <COLUMN name="PRICE" missing="." />
+      <COLUMN name="TYPE" value="N" />
+      <COLUMN name="LABEL" missing=" " />
+      <COLUMN name="FORMAT" missing=" " />
+      <COLUMN name="INFORMAT" missing=" " />
+      <COLUMN name="INDEX" value="N" />
+      <COLUMN name="INDEXTYPE" value="NONE" />
+      <COLUMN name="LENGTH" value="8" />
+   </INPUT>
+   <INPUT>
+      <COLUMN name="NAME" value="JOB" />
+      <COLUMN name="ROLE" value="INPUT" />
+      <COLUMN name="LEVEL" value="NOMINAL" />
+      <COLUMN name="ORDER" missing=" " />
+      <COLUMN name="CREATOR" missing=" " />
+      <COLUMN name="FORMATTYPE" missing=" " />
+      <COLUMN name="FAMILY" missing=" " />
+      <COLUMN name="LOWERLIMIT" missing="." />
+      <COLUMN name="UPPERLIMIT" missing="." />
+      <COLUMN name="REPORT" value="N" />
+      <COLUMN name="DISTRIBUTION" missing=" " />
+      <COLUMN name="COMMENT" missing=" " />
+      <COLUMN name="PRICE" missing="." />
+      <COLUMN name="TYPE" value="C" />
+      <COLUMN name="LABEL" missing=" " />
+      <COLUMN name="FORMAT" missing=" " />
+      <COLUMN name="INFORMAT" missing=" " />
+      <COLUMN name="INDEX" value="N" />
+      <COLUMN name="INDEXTYPE" value="NONE" />
+      <COLUMN name="LENGTH" value="7" />
+   </INPUT>
+   <INPUT>
+      <COLUMN name="NAME" value="LOAN" />
+      <COLUMN name="ROLE" value="INPUT" />
+      <COLUMN name="LEVEL" value="INTERVAL" />
+      <COLUMN name="ORDER" missing=" " />
+      <COLUMN name="CREATOR" missing=" " />
+      <COLUMN name="FORMATTYPE" missing=" " />
+      <COLUMN name="FAMILY" missing=" " />
+      <COLUMN name="LOWERLIMIT" missing="." />
+      <COLUMN name="UPPERLIMIT" missing="." />
+      <COLUMN name="REPORT" value="N" />
+      <COLUMN name="DISTRIBUTION" missing=" " />
+      <COLUMN name="COMMENT" missing=" " />
+      <COLUMN name="PRICE" missing="." />
+      <COLUMN name="TYPE" value="N" />
+      <COLUMN name="LABEL" missing=" " />
+      <COLUMN name="FORMAT" missing=" " />
+      <COLUMN name="INFORMAT" missing=" " />
+      <COLUMN name="INDEX" value="N" />
+      <COLUMN name="INDEXTYPE" value="NONE" />
+      <COLUMN name="LENGTH" value="8" />
+   </INPUT>
+   <INPUT>
+      <COLUMN name="NAME" value="MORTDUE" />
+      <COLUMN name="ROLE" value="INPUT" />
+      <COLUMN name="LEVEL" value="INTERVAL" />
+      <COLUMN name="ORDER" missing=" " />
+      <COLUMN name="CREATOR" missing=" " />
+      <COLUMN name="FORMATTYPE" missing=" " />
+      <COLUMN name="FAMILY" missing=" " />
+      <COLUMN name="LOWERLIMIT" missing="." />
+      <COLUMN name="UPPERLIMIT" missing="." />
+      <COLUMN name="REPORT" value="N" />
+      <COLUMN name="DISTRIBUTION" missing=" " />
+      <COLUMN name="COMMENT" missing=" " />
+      <COLUMN name="PRICE" missing="." />
+      <COLUMN name="TYPE" value="N" />
+      <COLUMN name="LABEL" missing=" " />
+      <COLUMN name="FORMAT" missing=" " />
+      <COLUMN name="INFORMAT" missing=" " />
+      <COLUMN name="INDEX" value="N" />
+      <COLUMN name="INDEXTYPE" value="NONE" />
+      <COLUMN name="LENGTH" value="8" />
+   </INPUT>
+   <INPUT>
+      <COLUMN name="NAME" value="NINQ" />
+      <COLUMN name="ROLE" value="INPUT" />
+      <COLUMN name="LEVEL" value="INTERVAL" />
+      <COLUMN name="ORDER" missing=" " />
+      <COLUMN name="CREATOR" missing=" " />
+      <COLUMN name="FORMATTYPE" missing=" " />
+      <COLUMN name="FAMILY" missing=" " />
+      <COLUMN name="LOWERLIMIT" missing="." />
+      <COLUMN name="UPPERLIMIT" missing="." />
+      <COLUMN name="REPORT" value="N" />
+      <COLUMN name="DISTRIBUTION" missing=" " />
+      <COLUMN name="COMMENT" missing=" " />
+      <COLUMN name="PRICE" missing="." />
+      <COLUMN name="TYPE" value="N" />
+      <COLUMN name="LABEL" missing=" " />
+      <COLUMN name="FORMAT" missing=" " />
+      <COLUMN name="INFORMAT" missing=" " />
+      <COLUMN name="INDEX" value="N" />
+      <COLUMN name="INDEXTYPE" value="NONE" />
+      <COLUMN name="LENGTH" value="8" />
+   </INPUT>
+   <INPUT>
+      <COLUMN name="NAME" value="REASON" />
+      <COLUMN name="ROLE" value="INPUT" />
+      <COLUMN name="LEVEL" value="NOMINAL" />
+      <COLUMN name="ORDER" missing=" " />
+      <COLUMN name="CREATOR" missing=" " />
+      <COLUMN name="FORMATTYPE" missing=" " />
+      <COLUMN name="FAMILY" missing=" " />
+      <COLUMN name="LOWERLIMIT" missing="." />
+      <COLUMN name="UPPERLIMIT" missing="." />
+      <COLUMN name="REPORT" value="N" />
+      <COLUMN name="DISTRIBUTION" missing=" " />
+      <COLUMN name="COMMENT" missing=" " />
+      <COLUMN name="PRICE" missing="." />
+      <COLUMN name="TYPE" value="C" />
+      <COLUMN name="LABEL" missing=" " />
+      <COLUMN name="FORMAT" missing=" " />
+      <COLUMN name="INFORMAT" missing=" " />
+      <COLUMN name="INDEX" value="N" />
+      <COLUMN name="INDEXTYPE" value="NONE" />
+      <COLUMN name="LENGTH" value="7" />
+   </INPUT>
+   <INPUT>
+      <COLUMN name="NAME" value="VALUE" />
+      <COLUMN name="ROLE" value="INPUT" />
+      <COLUMN name="LEVEL" value="INTERVAL" />
+      <COLUMN name="ORDER" missing=" " />
+      <COLUMN name="CREATOR" missing=" " />
+      <COLUMN name="FORMATTYPE" missing=" " />
+      <COLUMN name="FAMILY" missing=" " />
+      <COLUMN name="LOWERLIMIT" missing="." />
+      <COLUMN name="UPPERLIMIT" missing="." />
+      <COLUMN name="REPORT" value="N" />
+      <COLUMN name="DISTRIBUTION" missing=" " />
+      <COLUMN name="COMMENT" missing=" " />
+      <COLUMN name="PRICE" missing="." />
+      <COLUMN name="TYPE" value="N" />
+      <COLUMN name="LABEL" missing=" " />
+      <COLUMN name="FORMAT" missing=" " />
+      <COLUMN name="INFORMAT" missing=" " />
+      <COLUMN name="INDEX" value="N" />
+      <COLUMN name="INDEXTYPE" value="NONE" />
+      <COLUMN name="LENGTH" value="8" />
+   </INPUT>
+   <INPUT>
+      <COLUMN name="NAME" value="YOJ" />
+      <COLUMN name="ROLE" value="INPUT" />
+      <COLUMN name="LEVEL" value="INTERVAL" />
+      <COLUMN name="ORDER" missing=" " />
+      <COLUMN name="CREATOR" missing=" " />
+      <COLUMN name="FORMATTYPE" missing=" " />
+      <COLUMN name="FAMILY" missing=" " />
+      <COLUMN name="LOWERLIMIT" missing="." />
+      <COLUMN name="UPPERLIMIT" missing="." />
+      <COLUMN name="REPORT" value="N" />
+      <COLUMN name="DISTRIBUTION" missing=" " />
+      <COLUMN name="COMMENT" missing=" " />
+      <COLUMN name="PRICE" missing="." />
+      <COLUMN name="TYPE" value="N" />
+      <COLUMN name="LABEL" missing=" " />
+      <COLUMN name="FORMAT" missing=" " />
+      <COLUMN name="INFORMAT" missing=" " />
+      <COLUMN name="INDEX" value="N" />
+      <COLUMN name="INDEXTYPE" value="NONE" />
+      <COLUMN name="LENGTH" value="8" />
+   </INPUT>
+</TABLE>
