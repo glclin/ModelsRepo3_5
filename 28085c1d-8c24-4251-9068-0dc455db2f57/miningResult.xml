@@ -1,1 +1,10 @@
-{"errorCode":404,"message":"Not Found","details":["path: /modelRepository/models/28085c1d-8c24-4251-9068-0dc455db2f57/contents/d40b6911-662a-47fa-9b81-c61e4f549524/contents"],"links":[],"version":2,"httpStatusCode":404}
+<?xml version="1.0" encoding="UTF-8" ?><_ROOT_  WorkspaceName="EMWS1" UUID="f06c4137-0459-4f6f-8a58-c04396a3a4e5" ScoreCodeType="Data Step"
+ MiningFunction="Classification" MiningAlgorithm="Regression" MiningAlgorithmNode="Reg"
+ NodeAlgorithm="Score" NodeId="Score" NodeDescription="Score" Time="19JAN2011:14:30:53"
+ RawLastTimeRun="1611065950.6" LastTimeRun="19JAN2011:14:19:11" Userid="mdlmgradmin"
+ DataSource="homeequity" Library="SAMPSIO" Table="HMEQ" Segment="" SamplingRate="."
+ UseExternalData="" NTarget="1" NSegment="0">
+<TARGETS >
+<TARGET  Variable="BAD" Level="BINARY" Type="N" Format="" Order="DESC" NodeId="Reg"/>
+</TARGETS>
+</_ROOT_>
