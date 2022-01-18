@@ -1,4 +1,5 @@
-﻿data sasep.out;
+/* comment */
+data sasep.out;
   dcl package score sc();
   dcl double "LOAN";
   dcl double "VALUE";
