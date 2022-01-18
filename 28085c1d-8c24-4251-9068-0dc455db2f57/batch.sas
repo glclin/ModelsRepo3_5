@@ -8,7 +8,7 @@
 %let EM_DEBUGVAL =;
 %let EM_ACTION =run;
 *------------------------------------------------------------*;
-* Create workspace data set;
+* Create workspace data set + update;
 *------------------------------------------------------------*;
 data workspace;
 length property $64 value $100;
