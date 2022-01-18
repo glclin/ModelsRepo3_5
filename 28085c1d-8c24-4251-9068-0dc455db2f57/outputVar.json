@@ -1,1 +1,50 @@
-{"errorCode":404,"message":"Not Found","details":["path: /modelRepository/models/28085c1d-8c24-4251-9068-0dc455db2f57/contents/cb5cc8c3-5957-441a-973a-5e00c97e4672/contents"],"links":[],"version":2,"httpStatusCode":404}
+[
+  {
+    "level": "NOMINAL",
+    "name": "EM_CLASSIFICATION",
+    "length": 32,
+    "type": "string"
+  },
+  {
+    "level": "INTERVAL",
+    "name": "EM_EVENTPROBABILITY",
+    "length": 8,
+    "type": "decimal"
+  },
+  {
+    "level": "INTERVAL",
+    "name": "EM_PROBABILITY",
+    "length": 8,
+    "type": "decimal"
+  },
+  {
+    "level": "NOMINAL",
+    "name": "I_BAD",
+    "length": 12,
+    "type": "string"
+  },
+  {
+    "level": "INTERVAL",
+    "name": "P_BAD0",
+    "length": 8,
+    "type": "decimal"
+  },
+  {
+    "level": "INTERVAL",
+    "name": "P_BAD1",
+    "length": 8,
+    "type": "decimal"
+  },
+  {
+    "level": "NOMINAL",
+    "name": "U_BAD",
+    "length": 8,
+    "type": "decimal"
+  },
+  {
+    "level": "NOMINAL",
+    "name": "_WARN_",
+    "length": 4,
+    "type": "string"
+  }
+]
