@@ -1,1 +1,26 @@
-{"errorCode":404,"message":"Not Found","details":["path: /modelRepository/models/28085c1d-8c24-4251-9068-0dc455db2f57/contents/f7e09563-1d73-44ea-8da5-16dee27f3e80/contents"],"links":[],"version":2,"httpStatusCode":404}
+<?xml version="1.0" encoding="utf-8" ?>
+<TABLE>
+   <TARGET>
+      <COLUMN name="NAME" value="BAD" />
+      <COLUMN name="ROLE" value="TARGET" />
+      <COLUMN name="LEVEL" value="BINARY" />
+      <COLUMN name="ORDER" missing=" " />
+      <COLUMN name="CREATOR" missing=" " />
+      <COLUMN name="FORMATTYPE" missing=" " />
+      <COLUMN name="FAMILY" missing=" " />
+      <COLUMN name="LOWERLIMIT" missing="." />
+      <COLUMN name="UPPERLIMIT" missing="." />
+      <COLUMN name="REPORT" value="N" />
+      <COLUMN name="DISTRIBUTION" missing=" " />
+      <COLUMN name="COMMENT" missing=" " />
+      <COLUMN name="PRICE" missing="." />
+      <COLUMN name="TYPE" value="N" />
+      <COLUMN name="LABEL" missing=" " />
+      <COLUMN name="FORMAT" missing=" " />
+      <COLUMN name="INFORMAT" missing=" " />
+      <COLUMN name="INDEX" value="N" />
+      <COLUMN name="INDEXTYPE" value="NONE" />
+      <COLUMN name="LENGTH" value="8" />
+      <COLUMN name="NODEID" value="Reg" />
+   </TARGET>
+</TABLE>
