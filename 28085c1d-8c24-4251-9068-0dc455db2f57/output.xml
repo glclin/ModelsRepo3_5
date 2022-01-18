@@ -1,1 +1,179 @@
-{"errorCode":404,"message":"Not Found","details":["path: /modelRepository/models/28085c1d-8c24-4251-9068-0dc455db2f57/contents/0682ffe1-b1f9-4f6e-9aa9-a15a2331fde8/contents"],"links":[],"version":2,"httpStatusCode":404}
+<?xml version="1.0" encoding="utf-8" ?>
+<TABLE>
+   <OUTPUT>
+      <COLUMN name="NAME" value="EM_CLASSIFICATION" />
+      <COLUMN name="ROLE" value="CLASSIFICATION" />
+      <COLUMN name="LEVEL" value="NOMINAL" />
+      <COLUMN name="ORDER" missing=" " />
+      <COLUMN name="CREATOR" value="Score" />
+      <COLUMN name="FORMATTYPE" missing=" " />
+      <COLUMN name="FAMILY" missing=" " />
+      <COLUMN name="LOWERLIMIT" missing="." />
+      <COLUMN name="UPPERLIMIT" missing="." />
+      <COLUMN name="REPORT" value="N" />
+      <COLUMN name="DISTRIBUTION" missing=" " />
+      <COLUMN name="COMMENT" missing=" " />
+      <COLUMN name="PRICE" missing="." />
+      <COLUMN name="TYPE" value="C" />
+      <COLUMN name="LABEL" value="Prediction for BAD" />
+      <COLUMN name="FORMAT" missing=" " />
+      <COLUMN name="INFORMAT" missing=" " />
+      <COLUMN name="INDEX" value="N" />
+      <COLUMN name="INDEXTYPE" value="NONE" />
+      <COLUMN name="LENGTH" value="32" />
+   </OUTPUT>
+   <OUTPUT>
+      <COLUMN name="NAME" value="EM_EVENTPROBABILITY" />
+      <COLUMN name="ROLE" value="PREDICT" />
+      <COLUMN name="LEVEL" value="INTERVAL" />
+      <COLUMN name="ORDER" missing=" " />
+      <COLUMN name="CREATOR" value="Score" />
+      <COLUMN name="FORMATTYPE" missing=" " />
+      <COLUMN name="FAMILY" missing=" " />
+      <COLUMN name="LOWERLIMIT" missing="." />
+      <COLUMN name="UPPERLIMIT" missing="." />
+      <COLUMN name="REPORT" value="N" />
+      <COLUMN name="DISTRIBUTION" missing=" " />
+      <COLUMN name="COMMENT" missing=" " />
+      <COLUMN name="PRICE" missing="." />
+      <COLUMN name="TYPE" value="N" />
+      <COLUMN name="LABEL" value="Probability for level 1 of BAD" />
+      <COLUMN name="FORMAT" missing=" " />
+      <COLUMN name="INFORMAT" missing=" " />
+      <COLUMN name="INDEX" value="N" />
+      <COLUMN name="INDEXTYPE" value="NONE" />
+      <COLUMN name="LENGTH" value="8" />
+   </OUTPUT>
+   <OUTPUT>
+      <COLUMN name="NAME" value="EM_PROBABILITY" />
+      <COLUMN name="ROLE" value="PREDICT" />
+      <COLUMN name="LEVEL" value="INTERVAL" />
+      <COLUMN name="ORDER" missing=" " />
+      <COLUMN name="CREATOR" value="Score" />
+      <COLUMN name="FORMATTYPE" missing=" " />
+      <COLUMN name="FAMILY" missing=" " />
+      <COLUMN name="LOWERLIMIT" missing="." />
+      <COLUMN name="UPPERLIMIT" missing="." />
+      <COLUMN name="REPORT" value="N" />
+      <COLUMN name="DISTRIBUTION" missing=" " />
+      <COLUMN name="COMMENT" missing=" " />
+      <COLUMN name="PRICE" missing="." />
+      <COLUMN name="TYPE" value="N" />
+      <COLUMN name="LABEL" value="Probability of Classification" />
+      <COLUMN name="FORMAT" missing=" " />
+      <COLUMN name="INFORMAT" missing=" " />
+      <COLUMN name="INDEX" value="N" />
+      <COLUMN name="INDEXTYPE" value="NONE" />
+      <COLUMN name="LENGTH" value="8" />
+   </OUTPUT>
+   <OUTPUT>
+      <COLUMN name="NAME" value="I_BAD" />
+      <COLUMN name="ROLE" value="REJECTED" />
+      <COLUMN name="LEVEL" value="NOMINAL" />
+      <COLUMN name="ORDER" missing=" " />
+      <COLUMN name="CREATOR" value="Reg" />
+      <COLUMN name="FORMATTYPE" missing=" " />
+      <COLUMN name="FAMILY" missing=" " />
+      <COLUMN name="LOWERLIMIT" missing="." />
+      <COLUMN name="UPPERLIMIT" missing="." />
+      <COLUMN name="REPORT" value="N" />
+      <COLUMN name="DISTRIBUTION" missing=" " />
+      <COLUMN name="COMMENT" missing=" " />
+      <COLUMN name="PRICE" missing="." />
+      <COLUMN name="TYPE" value="C" />
+      <COLUMN name="LABEL" value="Into: BAD" />
+      <COLUMN name="FORMAT" missing=" " />
+      <COLUMN name="INFORMAT" missing=" " />
+      <COLUMN name="INDEX" value="N" />
+      <COLUMN name="INDEXTYPE" value="NONE" />
+      <COLUMN name="LENGTH" value="12" />
+   </OUTPUT>
+   <OUTPUT>
+      <COLUMN name="NAME" value="P_BAD0" />
+      <COLUMN name="ROLE" value="REJECTED" />
+      <COLUMN name="LEVEL" value="INTERVAL" />
+      <COLUMN name="ORDER" missing=" " />
+      <COLUMN name="CREATOR" value="Reg" />
+      <COLUMN name="FORMATTYPE" missing=" " />
+      <COLUMN name="FAMILY" missing=" " />
+      <COLUMN name="LOWERLIMIT" missing="." />
+      <COLUMN name="UPPERLIMIT" missing="." />
+      <COLUMN name="REPORT" value="N" />
+      <COLUMN name="DISTRIBUTION" missing=" " />
+      <COLUMN name="COMMENT" missing=" " />
+      <COLUMN name="PRICE" missing="." />
+      <COLUMN name="TYPE" value="N" />
+      <COLUMN name="LABEL" value="Predicted: BAD=0" />
+      <COLUMN name="FORMAT" missing=" " />
+      <COLUMN name="INFORMAT" missing=" " />
+      <COLUMN name="INDEX" value="N" />
+      <COLUMN name="INDEXTYPE" value="NONE" />
+      <COLUMN name="LENGTH" value="8" />
+   </OUTPUT>
+   <OUTPUT>
+      <COLUMN name="NAME" value="P_BAD1" />
+      <COLUMN name="ROLE" value="REJECTED" />
+      <COLUMN name="LEVEL" value="INTERVAL" />
+      <COLUMN name="ORDER" missing=" " />
+      <COLUMN name="CREATOR" value="Reg" />
+      <COLUMN name="FORMATTYPE" missing=" " />
+      <COLUMN name="FAMILY" missing=" " />
+      <COLUMN name="LOWERLIMIT" missing="." />
+      <COLUMN name="UPPERLIMIT" missing="." />
+      <COLUMN name="REPORT" value="N" />
+      <COLUMN name="DISTRIBUTION" missing=" " />
+      <COLUMN name="COMMENT" missing=" " />
+      <COLUMN name="PRICE" missing="." />
+      <COLUMN name="TYPE" value="N" />
+      <COLUMN name="LABEL" value="Predicted: BAD=1" />
+      <COLUMN name="FORMAT" missing=" " />
+      <COLUMN name="INFORMAT" missing=" " />
+      <COLUMN name="INDEX" value="N" />
+      <COLUMN name="INDEXTYPE" value="NONE" />
+      <COLUMN name="LENGTH" value="8" />
+   </OUTPUT>
+   <OUTPUT>
+      <COLUMN name="NAME" value="U_BAD" />
+      <COLUMN name="ROLE" value="CLASSIFICATION" />
+      <COLUMN name="LEVEL" value="NOMINAL" />
+      <COLUMN name="ORDER" missing=" " />
+      <COLUMN name="CREATOR" value="Reg" />
+      <COLUMN name="FORMATTYPE" missing=" " />
+      <COLUMN name="FAMILY" missing=" " />
+      <COLUMN name="LOWERLIMIT" missing="." />
+      <COLUMN name="UPPERLIMIT" missing="." />
+      <COLUMN name="REPORT" value="N" />
+      <COLUMN name="DISTRIBUTION" missing=" " />
+      <COLUMN name="COMMENT" missing=" " />
+      <COLUMN name="PRICE" missing="." />
+      <COLUMN name="TYPE" value="N" />
+      <COLUMN name="LABEL" value="Unnormalized Into: BAD" />
+      <COLUMN name="FORMAT" missing=" " />
+      <COLUMN name="INFORMAT" missing=" " />
+      <COLUMN name="INDEX" value="N" />
+      <COLUMN name="INDEXTYPE" value="NONE" />
+      <COLUMN name="LENGTH" value="8" />
+   </OUTPUT>
+   <OUTPUT>
+      <COLUMN name="NAME" value="_WARN_" />
+      <COLUMN name="ROLE" value="ASSESS" />
+      <COLUMN name="LEVEL" value="NOMINAL" />
+      <COLUMN name="ORDER" missing=" " />
+      <COLUMN name="CREATOR" value="Reg" />
+      <COLUMN name="FORMATTYPE" missing=" " />
+      <COLUMN name="FAMILY" missing=" " />
+      <COLUMN name="LOWERLIMIT" missing="." />
+      <COLUMN name="UPPERLIMIT" missing="." />
+      <COLUMN name="REPORT" value="N" />
+      <COLUMN name="DISTRIBUTION" missing=" " />
+      <COLUMN name="COMMENT" missing=" " />
+      <COLUMN name="PRICE" missing="." />
+      <COLUMN name="TYPE" value="C" />
+      <COLUMN name="LABEL" value="Warnings" />
+      <COLUMN name="FORMAT" missing=" " />
+      <COLUMN name="INFORMAT" missing=" " />
+      <COLUMN name="INDEX" value="N" />
+      <COLUMN name="INDEXTYPE" value="NONE" />
+      <COLUMN name="LENGTH" value="4" />
+   </OUTPUT>
+</TABLE>
