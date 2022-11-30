@@ -1,0 +1,126 @@
+{
+  "creationTimeStamp": "2022-11-30T07:31:25.850369202Z",
+  "createdBy": "edmdev",
+  "modifiedTimeStamp": "2022-11-30T07:31:25.850369202Z",
+  "modifiedBy": "edmdev",
+  "id": "48bee678-6a25-43a6-a8c3-f36f3cf15d05",
+  "destinationName": "AzureWithGitHub",
+  "destination": {
+    "creationTimeStamp": "2022-11-30T06:40:38.532245Z",
+    "createdBy": "edmdev",
+    "modifiedTimeStamp": "2022-11-30T06:40:38.532245Z",
+    "modifiedBy": "edmdev",
+    "version": 2,
+    "id": "afcf50dc-96ec-4087-9a55-67caff3908f7",
+    "name": "AzureWithGitHub",
+    "description": "Azure destination for the Explore Demo",
+    "destinationType": "azure",
+    "properties": [
+      {
+        "name": "RemoteRepositoryURL",
+        "value": "https://github.com/glclin/ModelsRepo3_5.git"
+      },
+      {
+        "name": "region",
+        "value": "eastus"
+      },
+      {
+        "name": "baseRepoUrl",
+        "value": "cefeed5719c54f0091ad7e1df5ac3a70.azurecr.io/exploreDemo"
+      },
+      {
+        "name": "kubernetesCluster",
+        "value": "validationAKS"
+      },
+      {
+        "name": "LocalRepositoryLocation",
+        "value": "/mmprojectpublic"
+      },
+      {
+        "name": "subscriptionId",
+        "value": "224f27e0-745f-452c-a442-70e79d24ce7f"
+      },
+      {
+        "name": "tenantId",
+        "value": "b1c14d5c-3625-45b3-a430-9552373a0c2f"
+      },
+      {
+        "name": "resourceGroupName",
+        "value": "modelManager"
+      },
+      {
+        "name": "deploymentGitFolder",
+        "value": "deployment"
+      },
+      {
+        "name": "UserEmail",
+        "value": "mm.test@sas.com"
+      },
+      {
+        "name": "credDomainId",
+        "value": "azuresWithGitHub"
+      }
+    ],
+    "links": [
+      {
+        "method": "GET",
+        "rel": "up",
+        "href": "/modelPublish/destinations",
+        "uri": "/modelPublish/destinations",
+        "type": "application/vnd.sas.collection"
+      },
+      {
+        "method": "GET",
+        "rel": "self",
+        "href": "/modelPublish/destinations/AzureWithGitHub",
+        "uri": "/modelPublish/destinations/AzureWithGitHub",
+        "type": "application/vnd.sas.models.publishing.destination"
+      },
+      {
+        "method": "DELETE",
+        "rel": "delete",
+        "href": "/modelPublish/destinations/AzureWithGitHub",
+        "uri": "/modelPublish/destinations/AzureWithGitHub"
+      },
+      {
+        "method": "PUT",
+        "rel": "update",
+        "href": "/modelPublish/destinations/AzureWithGitHub",
+        "uri": "/modelPublish/destinations/AzureWithGitHub",
+        "type": "application/vnd.sas.models.publishing.destination"
+      }
+    ]
+  },
+  "content": {
+    "creationTimeStamp": "0001-01-01T00:00:00Z",
+    "modifiedTimeStamp": "0001-01-01T00:00:00Z",
+    "modelName": "QS_Tree1130",
+    "principalID": "e2c7eb8e-6147-4b72-9164-53c3fe0b64fe",
+    "codeType": "ds1",
+    "code": "ds2_options sas tkgmac scond=none;\n package QS_Tree1130 /overwrite=yes;\n #_local _P_;\n #_local _NEW_ID_;\n #_local _NODE_ID_;\n #_local _NUMVAL_;\n #_local _DT_PRED_PROB_;\n #_local _DT_PRED_LEV_;\n #_local _I_;\n #_local _DT_PREDP_;\n dcl double EM_EVENTPROBABILITY;\n dcl char(32) EM_CLASSIFICATION;\n dcl double EM_PROBABILITY;\n method score(double \"CLAGE\", double \"DEBTINC\", double \"DELINQ\", double \n\"DEROG\", double \"VALUE\", in_out char(12) \"EM_CLASSIFICATION\", in_out double \n\"EM_EVENTPROBABILITY\", in_out double \"EM_PROBABILITY\", in_out char(12) \n\"I_BAD\", in_out double \"P_BAD0\", in_out double \"P_BAD1\", in_out double \n\"_leaf_id_\");\ndcl char(12) _STRFMT_;\n dcl double _DT_FI_10015615_[2];\n dcl char(12) _TLEVNAME_10015615_[2];\n _TLEVNAME_10015615_:=('           1', '           0');\n_STRFMT_ = ' ';\n_NODE_ID_ = 0.0;\n_NEW_ID_ = -1.0;\nNEXTNODE_10015615: if _NODE_ID_ = 0.0 then do ;\n_STRFMT_ = LEFT(TRIM(put(DELINQ, BEST12.)));\nif _STRFMT_ in ('4', '1', '0', '3', '2', '.') then do ;\n_NEW_ID_ = 1.0;\nend;\n else if _STRFMT_ in ('10', '5', '7', '6', '8') then do ;\n_NEW_ID_ = 2.0;\nend;\n else do ;\n_NEW_ID_ = 1.0;\nend;\nend;\n else if _NODE_ID_ = 1.0 then do ;\n_NUMVAL_ = DEBTINC;\nif MISSING(_NUMVAL_) then do ;\n_NODE_ID_ = 3.0;\ngoto NEXTNODE_10015615;\nend;\nif (_NUMVAL_ \u003e= 43.5520309368842 \u0026 _NUMVAL_ \u003c 143.949604953611) then do \n;\n_NEW_ID_ = 3.0;\nend;\n else if (_NUMVAL_ \u003e= 0.52449921542988 \u0026 _NUMVAL_ \u003c 43.5520309368842) \nthen do ;\n_NEW_ID_ = 4.0;\nend;\n else if (_NUMVAL_ \u003c 0.52449921542988) then do ;\n_NEW_ID_ = 4.0;\nend;\n else if (_NUMVAL_ \u003e= 143.949604953611) then do ;\n_NEW_ID_ = 3.0;\nend;\n else do ;\n_NEW_ID_ = 4.0;\nend;\nend;\n else if _NODE_ID_ = 2.0 then do ;\n_LEAF_ID_ = 2.0;\n_NEW_ID_ = -1.0;\n_DT_PRED_LEV_ = 0.0;\n_DT_PRED_PROB_ = 1.0;\n_DT_FI_10015615_[1.0] = 1.0;\n_DT_FI_10015615_[2.0] = 0.0;\nend;\n else if _NODE_ID_ = 3.0 then do ;\n_STRFMT_ = LEFT(TRIM(put(DEROG, BEST12.)));\nif _STRFMT_ in ('1', '0', '2', '.') then do ;\n_NEW_ID_ = 5.0;\nend;\n else if _STRFMT_ in ('4', '7', '6', '3') then do ;\n_NEW_ID_ = 6.0;\nend;\n else do ;\n_NEW_ID_ = 5.0;\nend;\nend;\n else if _NODE_ID_ = 4.0 then do ;\n_NUMVAL_ = VALUE;\nif MISSING(_NUMVAL_) then do ;\n_NODE_ID_ = 7.0;\ngoto NEXTNODE_10015615;\nend;\nif (_NUMVAL_ \u003e= 474844.95 \u0026 _NUMVAL_ \u003c 855909.0) then do ;\n_NEW_ID_ = 7.0;\nend;\n else if (_NUMVAL_ \u003e= 9100.0 \u0026 _NUMVAL_ \u003c 474844.95) then do ;\n_NEW_ID_ = 8.0;\nend;\n else if (_NUMVAL_ \u003c 9100.0) then do ;\n_NEW_ID_ = 8.0;\nend;\n else if (_NUMVAL_ \u003e= 855909.0) then do ;\n_NEW_ID_ = 7.0;\nend;\n else do ;\n_NEW_ID_ = 8.0;\nend;\nend;\n else if _NODE_ID_ = 5.0 then do ;\n_NUMVAL_ = VALUE;\nif MISSING(_NUMVAL_) then do ;\n_NODE_ID_ = 9.0;\ngoto NEXTNODE_10015615;\nend;\nif (_NUMVAL_ \u003e= 474844.95 \u0026 _NUMVAL_ \u003c 855909.0) then do ;\n_NEW_ID_ = 9.0;\nend;\n else if (_NUMVAL_ \u003e= 9100.0 \u0026 _NUMVAL_ \u003c 474844.95) then do ;\n_NEW_ID_ = 10.0;\nend;\n else if (_NUMVAL_ \u003c 9100.0) then do ;\n_NEW_ID_ = 10.0;\nend;\n else if (_NUMVAL_ \u003e= 855909.0) then do ;\n_NEW_ID_ = 9.0;\nend;\n else do ;\n_NEW_ID_ = 10.0;\nend;\nend;\n else if _NODE_ID_ = 6.0 then do ;\n_LEAF_ID_ = 6.0;\n_NEW_ID_ = -1.0;\n_DT_PRED_LEV_ = 0.0;\n_DT_PRED_PROB_ = 1.0;\n_DT_FI_10015615_[1.0] = 1.0;\n_DT_FI_10015615_[2.0] = 0.0;\nend;\n else if _NODE_ID_ = 7.0 then do ;\n_LEAF_ID_ = 7.0;\n_NEW_ID_ = -1.0;\n_DT_PRED_LEV_ = 0.0;\n_DT_PRED_PROB_ = 0.72727272727272;\n_DT_FI_10015615_[1.0] = 0.72727272727272;\n_DT_FI_10015615_[2.0] = 0.27272727272727;\nend;\n else if _NODE_ID_ = 8.0 then do ;\n_LEAF_ID_ = 8.0;\n_NEW_ID_ = -1.0;\n_DT_PRED_LEV_ = 1.0;\n_DT_PRED_PROB_ = 0.94372693726937;\n_DT_FI_10015615_[1.0] = 0.05627306273062;\n_DT_FI_10015615_[2.0] = 0.94372693726937;\nend;\n else if _NODE_ID_ = 9.0 then do ;\n_LEAF_ID_ = 9.0;\n_NEW_ID_ = -1.0;\n_DT_PRED_LEV_ = 0.0;\n_DT_PRED_PROB_ = 1.0;\n_DT_FI_10015615_[1.0] = 1.0;\n_DT_FI_10015615_[2.0] = 0.0;\nend;\n else if _NODE_ID_ = 10.0 then do ;\n_NUMVAL_ = DEBTINC;\nif MISSING(_NUMVAL_) then do ;\n_NODE_ID_ = 12.0;\ngoto NEXTNODE_10015615;\nend;\nif (_NUMVAL_ \u003e= 50.7232862237933 \u0026 _NUMVAL_ \u003c 143.949604953611) then do \n;\n_NEW_ID_ = 11.0;\nend;\n else if (_NUMVAL_ \u003e= 0.52449921542988 \u0026 _NUMVAL_ \u003c 50.7232862237933) \nthen do ;\n_NEW_ID_ = 12.0;\nend;\n else if (_NUMVAL_ \u003c 0.52449921542988) then do ;\n_NEW_ID_ = 12.0;\nend;\n else if (_NUMVAL_ \u003e= 143.949604953611) then do ;\n_NEW_ID_ = 11.0;\nend;\n else do ;\n_NEW_ID_ = 12.0;\nend;\nend;\n else if _NODE_ID_ = 11.0 then do ;\n_LEAF_ID_ = 11.0;\n_NEW_ID_ = -1.0;\n_DT_PRED_LEV_ = 0.0;\n_DT_PRED_PROB_ = 1.0;\n_DT_FI_10015615_[1.0] = 1.0;\n_DT_FI_10015615_[2.0] = 0.0;\nend;\n else if _NODE_ID_ = 12.0 then do ;\n_STRFMT_ = LEFT(TRIM(put(DELINQ, BEST12.)));\nif _STRFMT_ in ('1', '0', '3', '2', '.') then do ;\n_NEW_ID_ = 13.0;\nend;\n else if _STRFMT_ in ('4') then do ;\n_NEW_ID_ = 14.0;\nend;\n else do ;\n_NEW_ID_ = 13.0;\nend;\nend;\n else if _NODE_ID_ = 13.0 then do ;\n_STRFMT_ = LEFT(TRIM(put(DELINQ, BEST12.)));\nif _STRFMT_ in ('1', '0', '2', '.') then do ;\n_NEW_ID_ = 15.0;\nend;\n else if _STRFMT_ in ('3') then do ;\n_NEW_ID_ = 16.0;\nend;\n else do ;\n_NEW_ID_ = 15.0;\nend;\nend;\n else if _NODE_ID_ = 14.0 then do ;\n_LEAF_ID_ = 14.0;\n_NEW_ID_ = -1.0;\n_DT_PRED_LEV_ = 0.0;\n_DT_PRED_PROB_ = 1.0;\n_DT_FI_10015615_[1.0] = 1.0;\n_DT_FI_10015615_[2.0] = 0.0;\nend;\n else if _NODE_ID_ = 15.0 then do ;\n_NUMVAL_ = CLAGE;\nif MISSING(_NUMVAL_) then do ;\n_NODE_ID_ = 18.0;\ngoto NEXTNODE_10015615;\nend;\nif (_NUMVAL_ \u003e= 175.235034141696 \u0026 _NUMVAL_ \u003c 1168.23356094464) then do \n;\n_NEW_ID_ = 17.0;\nend;\n else if (_NUMVAL_ \u003e= 0.0 \u0026 _NUMVAL_ \u003c 175.235034141696) then do ;\n_NEW_ID_ = 18.0;\nend;\n else if (_NUMVAL_ \u003c 0.0) then do ;\n_NEW_ID_ = 18.0;\nend;\n else if (_NUMVAL_ \u003e= 1168.23356094464) then do ;\n_NEW_ID_ = 17.0;\nend;\n else do ;\n_NEW_ID_ = 18.0;\nend;\nend;\n else if _NODE_ID_ = 16.0 then do ;\n_LEAF_ID_ = 16.0;\n_NEW_ID_ = -1.0;\n_DT_PRED_LEV_ = 0.0;\n_DT_PRED_PROB_ = 0.93333333333333;\n_DT_FI_10015615_[1.0] = 0.93333333333333;\n_DT_FI_10015615_[2.0] = 0.06666666666666;\nend;\n else if _NODE_ID_ = 17.0 then do ;\n_LEAF_ID_ = 17.0;\n_NEW_ID_ = -1.0;\n_DT_PRED_LEV_ = 1.0;\n_DT_PRED_PROB_ = 0.67;\n_DT_FI_10015615_[1.0] = 0.33;\n_DT_FI_10015615_[2.0] = 0.67;\nend;\n else if _NODE_ID_ = 18.0 then do ;\n_LEAF_ID_ = 18.0;\n_NEW_ID_ = -1.0;\n_DT_PRED_LEV_ = 0.0;\n_DT_PRED_PROB_ = 0.68181818181818;\n_DT_FI_10015615_[1.0] = 0.68181818181818;\n_DT_FI_10015615_[2.0] = 0.31818181818181;\nend;\nif _NEW_ID_ \u003e= 0.0 then do ;\n_NODE_ID_ = _NEW_ID_;\ngoto NEXTNODE_10015615;\nend;\nI_BAD = _TLEVNAME_10015615_[_DT_PRED_LEV_ + 1.0];\n_I_ = 1.0;\n_DT_PREDP_ = _DT_FI_10015615_[_I_];\nP_BAD1 = _DT_PREDP_;\n_I_ + 1.0;\n_DT_PREDP_ = _DT_FI_10015615_[_I_];\nP_BAD0 = _DT_PREDP_;\n_I_ + 1.0;\nif \"P_BAD0\" = . then \"P_BAD0\" = 0.8000839983;\nif \"P_BAD1\" = . then \"P_BAD1\" = 0.1999160017;\nif MISSING(\"I_BAD\") then do ;\n_P_ = 0.0;\nif \"P_BAD1\" \u003e _P_ then do ;\n_P_ = \"P_BAD1\";\n\"I_BAD\" = '1';\nend;\nif \"P_BAD0\" \u003e _P_ then do ;\n_P_ = \"P_BAD0\";\n\"I_BAD\" = '0';\nend;\nend;\nEM_EVENTPROBABILITY = \"P_BAD1\";\nEM_CLASSIFICATION = \"I_BAD\";\nEM_PROBABILITY = MAX(\"P_BAD1\", \"P_BAD0\");\n_return: ;\nend;\n endpackage;\n",
+    "sourceURI": "/modelRepository/models/e2c7eb8e-6147-4b72-9164-53c3fe0b64fe",
+    "projectID": "36389ed2-bbf0-4265-a4eb-63579e542dd3",
+    "projectVersionID": "09d1f146-451d-468c-8eb7-748284940e5b",
+    "modelID": "e2c7eb8e-6147-4b72-9164-53c3fe0b64fe",
+    "modelVersionID": "2.0",
+    "publishLevel": "model",
+    "variableXML": "\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u003e\n\u003cScore\u003e\n  \u003cTargetList\u003e\u003c/TargetList\u003e\n  \u003cProducer\u003e\n    \u003cName\u003eSAS Model Manager\u003c/Name\u003e\n    \u003cVersion\u003e15.1\u003c/Version\u003e\n  \u003c/Producer\u003e\n  \u003cInput\u003e\n    \u003cVariable\u003e\n      \u003cName\u003e\"CLAGE\"\u003c/Name\u003e\n      \u003cType\u003enumeric\u003c/Type\u003e\n    \u003c/Variable\u003e\n  \u003c/Input\u003e\n  \u003cInput\u003e\n    \u003cVariable\u003e\n      \u003cName\u003e\"DEBTINC\"\u003c/Name\u003e\n      \u003cType\u003enumeric\u003c/Type\u003e\n    \u003c/Variable\u003e\n  \u003c/Input\u003e\n  \u003cInput\u003e\n    \u003cVariable\u003e\n      \u003cName\u003e\"DELINQ\"\u003c/Name\u003e\n      \u003cType\u003enumeric\u003c/Type\u003e\n    \u003c/Variable\u003e\n  \u003c/Input\u003e\n  \u003cInput\u003e\n    \u003cVariable\u003e\n      \u003cName\u003e\"DEROG\"\u003c/Name\u003e\n      \u003cType\u003enumeric\u003c/Type\u003e\n    \u003c/Variable\u003e\n  \u003c/Input\u003e\n  \u003cInput\u003e\n    \u003cVariable\u003e\n      \u003cName\u003e\"VALUE\"\u003c/Name\u003e\n      \u003cType\u003enumeric\u003c/Type\u003e\n    \u003c/Variable\u003e\n  \u003c/Input\u003e\n  \u003cOutput\u003e\n    \u003cVariable\u003e\n      \u003cName\u003e\"EM_CLASSIFICATION\"\u003c/Name\u003e\n      \u003cType\u003echaracter\u003c/Type\u003e\n    \u003c/Variable\u003e\n  \u003c/Output\u003e\n  \u003cOutput\u003e\n    \u003cVariable\u003e\n      \u003cName\u003e\"EM_EVENTPROBABILITY\"\u003c/Name\u003e\n      \u003cType\u003enumeric\u003c/Type\u003e\n    \u003c/Variable\u003e\n  \u003c/Output\u003e\n  \u003cOutput\u003e\n    \u003cVariable\u003e\n      \u003cName\u003e\"EM_PROBABILITY\"\u003c/Name\u003e\n      \u003cType\u003enumeric\u003c/Type\u003e\n    \u003c/Variable\u003e\n  \u003c/Output\u003e\n  \u003cOutput\u003e\n    \u003cVariable\u003e\n      \u003cName\u003e\"I_BAD\"\u003c/Name\u003e\n      \u003cType\u003echaracter\u003c/Type\u003e\n    \u003c/Variable\u003e\n  \u003c/Output\u003e\n  \u003cOutput\u003e\n    \u003cVariable\u003e\n      \u003cName\u003e\"P_BAD0\"\u003c/Name\u003e\n      \u003cType\u003enumeric\u003c/Type\u003e\n    \u003c/Variable\u003e\n  \u003c/Output\u003e\n  \u003cOutput\u003e\n    \u003cVariable\u003e\n      \u003cName\u003e\"P_BAD1\"\u003c/Name\u003e\n      \u003cType\u003enumeric\u003c/Type\u003e\n    \u003c/Variable\u003e\n  \u003c/Output\u003e\n  \u003cOutput\u003e\n    \u003cVariable\u003e\n      \u003cName\u003e\"_leaf_id_\"\u003c/Name\u003e\n      \u003cType\u003enumeric\u003c/Type\u003e\n    \u003c/Variable\u003e\n  \u003c/Output\u003e\n\u003c/Score\u003e"
+  },
+  "properties": {
+    "containerKey": "sha256:d7b5716d2ea6cb056e25100437458b9c923ba8faa8128a7803afa4bb0f5fdf3a",
+    "dockerFileUri": "/files/files/f9d121d8-b68b-4aa6-bde0-09cf1f71c13a",
+    "gitFolderPath": "QS_Tree1130",
+    "gitRepositoryURL": "https://github.com/glclin/ModelsRepo3_5.git",
+    "imageUrl": "cefeed5719c54f0091ad7e1df5ac3a70.azurecr.io/exploredemo/qs_tree1130:1"
+  },
+  "sourceURI": "/modelRepository/models/e2c7eb8e-6147-4b72-9164-53c3fe0b64fe",
+  "inputVariables": null,
+  "outputVariables": null,
+  "component": {},
+  "product": {},
+  "service": {
+    "name": "Model Publish service"
+  },
+  "baseImage": {},
+  "tags": ",1"
+}
