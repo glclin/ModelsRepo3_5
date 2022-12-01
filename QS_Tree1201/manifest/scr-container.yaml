@@ -1,0 +1,16 @@
+Application:
+  Name: qs_tree1201
+MasterImage:
+  URL: repulpmaster.unx.sas.com/cdp-release-x64_oci_linux_2-docker-latest/sas-decisions-runtime-components:latest
+BaseImage:
+  URL: repulpmaster.unx.sas.com/cdp-release-x64_oci_linux_2-docker-latest/sas-decisions-runtime-base:latest
+Destination:
+  URL: cefeed5719c54f0091ad7e1df5ac3a70.azurecr.io/exploredemo/
+  ImageName: qs_tree1201
+  Tags:
+  - latest
+  - "4.0"
+ResourceCategories: []
+Languages: []
+Databases: []
+PythonResources: []
